@@ -1,0 +1,23 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    username: cos
+    password: 1234
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update #create update none
+    show-sql: true
+    database: oracle
+    database-platform: org.hibernate.dialect.Oracle10gDialect
